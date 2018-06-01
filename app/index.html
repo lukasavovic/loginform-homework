@@ -14,18 +14,19 @@
 			<a href="" class="singInB">SIGN UP</a>
 		</div>
 		<div class="row justify-content-center container" class="form">
-			<form action="" id="">
+			<form action="" id="form" @submit="formValidation">
 				<div class="form-group">
-					<label for="username">USERNAME</label>
-					<input type="email" class="form-control" id="username" placeholder="username/email">
+					<label for="username">EMAIL</label>
+					<input type="text" class="form-control" id="username" placeholder="username/email" v-model="email">
+					<p class="errors">{{emailError}}</p>
 				  </div>
 				  <div class="form-group">
 					<label for="password">
 						PASSWORD
 						<a href="#" @click="showHidePassword" id="eye"> <img src="img/eye.png" alt=""></a>
 					</label>
-					<input :type="passwordtype" class="form-control" id="password" placeholder="Password">
-					
+					<input :type="passwordtype" class="form-control" id="password" placeholder="Password" v-model="password">
+					<p class="errors">{{passwordError}}</p>
 				  </div>
 				  <button type="submit" class="btn btn-default">SIGN IN</button>
 			</form>

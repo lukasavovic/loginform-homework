@@ -30,6 +30,7 @@
             margin-bottom: 20px;
             font-size: 25px;
             color: darkgray;
+
         }
         button {
             border-radius: 50px;
@@ -42,8 +43,13 @@
         #eye {
             position: absolute;
             right: 0;
-            bottom: 0;
-            transform: translate(-150%,-200%)
+            transform: translate(-200%,100%)
+        }
+        .errors {
+            color: rgb(253, 0, 76);
+            display: block;
+            padding-left: 40px;
+            font-size: 22px;
         }
     }
 }
