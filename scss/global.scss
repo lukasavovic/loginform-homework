@@ -1,0 +1,23 @@
+// Load Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+
+// Global Variables
+$background-body: #fafafa;
+$gray: #c9c9c9;
+$light-gray: #ebebeb;
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+@media (width: 600px) {
+      #app {
+		  width: 80%;
+	  }
+}

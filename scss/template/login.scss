@@ -1,0 +1,49 @@
+#app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35%;
+    .singInA {
+        font-size: 40px;
+        color: white;
+        padding-left:20px;
+    }
+    .singInB {
+        font-size: 40px;
+        padding-left: 20px;
+        color: lightgray;
+    }
+    form {
+        width: 100%;
+        margin-top: 75px;
+        input {
+            color: white;
+            background-color:rgba($color: #a299ae, $alpha: 0.8);
+            border: none;
+            padding: 20px 25px;
+            font-size: 20px;
+            border-radius: 50px;
+        }
+        label {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            color: darkgray;
+        }
+        button {
+            border-radius: 50px;
+            margin: 30px auto 0;
+            display: block;
+            padding: 10px 30px;
+            background-color:rgba($color: #ce0052, $alpha: 0.6);
+            color: white;
+        }
+        #eye {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translate(-150%,-200%)
+        }
+    }
+}
